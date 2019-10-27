@@ -1,0 +1,528 @@
+{
+	"id": "2f671564-d80a-4d31-b77c-25a439d549eb",
+	"name": "ProductItemsTests",
+	"allTests": [],
+	"timestamp": "2019-10-27T11:57:05.115Z",
+	"collection_id": "0ad3fee0-4649-48a9-bb55-e73118ca74d3",
+	"folder_id": 0,
+	"target_type": "collection",
+	"environment_id": "0",
+	"data": [],
+	"delay": 0,
+	"count": 1,
+	"collection": {
+		"id": "0ad3fee0-4649-48a9-bb55-e73118ca74d3",
+		"name": "ProductItemsTests",
+		"order": [
+			"7855dc1d-77ec-4769-862a-646890c97cf9",
+			"babe16e5-dc4a-4960-b78c-dc35097ac9f4",
+			"23d6292a-fb4a-48ba-950f-53af6d2143c8",
+			"213d2ae5-e91a-4b97-bdd4-5f5919909dc6",
+			"147b16a3-9a05-4b0d-a1cf-61e1ab7f5a38",
+			"d9d0ff47-72f6-495e-8e75-de6c6cd774f4",
+			"1a233dbf-d70c-4257-8418-748f1419d7b1",
+			"ccd0b66e-99d6-4558-8cc6-d5ce29f0ff8b",
+			"10071dfa-5c12-4abf-a881-dec1af6c6a61"
+		],
+		"folders_order": [],
+		"isFavorite": false
+	},
+	"folder": null,
+	"environment": null,
+	"globals": [],
+	"results": [
+		{
+			"name": "POST",
+			"id": "7855dc1d-77ec-4769-862a-646890c97cf9",
+			"url": "http://localhost:52632/api/ProductItems",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 201,
+				"name": "Created",
+				"detail": {
+					"name": "Created",
+					"detail": "The request has been fulfilled and resulted in a new resource being created."
+				}
+			},
+			"tests": {
+				"Status code is 201": true
+			},
+			"testPassFailCounts": {
+				"Status code is 201": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"2211"
+			],
+			"allTests": [
+				{
+					"Status code is 201": true
+				}
+			],
+			"time": "2211",
+			"totalRequestTime": "2211",
+			"iterationResults": {}
+		},
+		{
+			"name": "GET",
+			"id": "babe16e5-dc4a-4960-b78c-dc35097ac9f4",
+			"url": "http://localhost:52632/api/ProductItems",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"603"
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			],
+			"time": "603",
+			"totalRequestTime": "603",
+			"iterationResults": {}
+		},
+		{
+			"name": "PUT",
+			"id": "23d6292a-fb4a-48ba-950f-53af6d2143c8",
+			"url": "http://localhost:52632/api/ProductItems/1",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 204,
+				"name": "No Content",
+				"detail": {
+					"name": "No Content",
+					"detail": "The server successfully processed the request, but is not returning any content."
+				}
+			},
+			"tests": {
+				"Status code is 204": true
+			},
+			"testPassFailCounts": {
+				"Status code is 204": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"170"
+			],
+			"allTests": [
+				{
+					"Status code is 204": true
+				}
+			],
+			"time": "170",
+			"totalRequestTime": "170",
+			"iterationResults": {}
+		},
+		{
+			"name": "GET (Id)",
+			"id": "213d2ae5-e91a-4b97-bdd4-5f5919909dc6",
+			"url": "http://localhost:52632/api/ProductItems/1",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"281"
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			],
+			"time": "281",
+			"totalRequestTime": "281",
+			"iterationResults": {}
+		},
+		{
+			"name": "DELETE",
+			"id": "147b16a3-9a05-4b0d-a1cf-61e1ab7f5a38",
+			"url": "http://localhost:52632/api/ProductItems/1",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"203"
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			],
+			"time": "203",
+			"totalRequestTime": "203",
+			"iterationResults": {}
+		},
+		{
+			"name": "GET (Not existing Id)",
+			"id": "d9d0ff47-72f6-495e-8e75-de6c6cd774f4",
+			"url": "http://localhost:52632/api/ProductItems/999",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found",
+				"detail": {
+					"name": "Not Found",
+					"detail": "The requested resource could not be found but may be available again in the future. Subsequent requests by the client are permissible."
+				}
+			},
+			"tests": {
+				"Status code is 404": true
+			},
+			"testPassFailCounts": {
+				"Status code is 404": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"113"
+			],
+			"allTests": [
+				{
+					"Status code is 404": true
+				}
+			],
+			"time": "113",
+			"totalRequestTime": "113",
+			"iterationResults": {}
+		},
+		{
+			"name": "POST (Too long Name)",
+			"id": "1a233dbf-d70c-4257-8418-748f1419d7b1",
+			"url": "http://localhost:52632/api/ProductItems",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request",
+				"detail": {
+					"name": "Bad Request",
+					"detail": "The request cannot be fulfilled due to bad syntax."
+				}
+			},
+			"tests": {
+				"Status code is 400": true
+			},
+			"testPassFailCounts": {
+				"Status code is 400": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"94"
+			],
+			"allTests": [
+				{
+					"Status code is 400": true
+				}
+			],
+			"time": "94",
+			"totalRequestTime": "94",
+			"iterationResults": {}
+		},
+		{
+			"name": "PUT (Not existing Id)",
+			"id": "ccd0b66e-99d6-4558-8cc6-d5ce29f0ff8b",
+			"url": "http://localhost:52632/api/ProductItems/889",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found",
+				"detail": {
+					"name": "Not Found",
+					"detail": "The requested resource could not be found but may be available again in the future. Subsequent requests by the client are permissible."
+				}
+			},
+			"tests": {
+				"Status code is 404": true
+			},
+			"testPassFailCounts": {
+				"Status code is 404": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"249"
+			],
+			"allTests": [
+				{
+					"Status code is 404": true
+				}
+			],
+			"time": "249",
+			"totalRequestTime": "249",
+			"iterationResults": {}
+		},
+		{
+			"name": "DELETE (Not existing Id)",
+			"id": "10071dfa-5c12-4abf-a881-dec1af6c6a61",
+			"url": "http://localhost:52632/api/ProductItems/779",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found",
+				"detail": {
+					"name": "Not Found",
+					"detail": "The requested resource could not be found but may be available again in the future. Subsequent requests by the client are permissible."
+				}
+			},
+			"tests": {
+				"Status code is 404": true
+			},
+			"testPassFailCounts": {
+				"Status code is 404": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"168"
+			],
+			"allTests": [
+				{
+					"Status code is 404": true
+				}
+			],
+			"time": "168",
+			"totalRequestTime": "168",
+			"iterationResults": {}
+		}
+	],
+	"totalPass": 9,
+	"totalFail": 0,
+	"totalTime": 4092,
+	"lifecycle": "done",
+	"requests": [
+		{
+			"name": "POST",
+			"id": "7855dc1d-77ec-4769-862a-646890c97cf9",
+			"url": "http://localhost:52632/api/ProductItems",
+			"time": "2019-10-27T11:57:05.115Z",
+			"responseCode": {
+				"code": 201,
+				"name": "Created",
+				"detail": {
+					"name": "Created",
+					"detail": "The request has been fulfilled and resulted in a new resource being created."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 201": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "GET",
+			"id": "babe16e5-dc4a-4960-b78c-dc35097ac9f4",
+			"url": "http://localhost:52632/api/ProductItems",
+			"time": "2019-10-27T11:57:05.115Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "PUT",
+			"id": "23d6292a-fb4a-48ba-950f-53af6d2143c8",
+			"url": "http://localhost:52632/api/ProductItems/1",
+			"time": "2019-10-27T11:57:05.115Z",
+			"responseCode": {
+				"code": 204,
+				"name": "No Content",
+				"detail": {
+					"name": "No Content",
+					"detail": "The server successfully processed the request, but is not returning any content."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 204": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "GET (Id)",
+			"id": "213d2ae5-e91a-4b97-bdd4-5f5919909dc6",
+			"url": "http://localhost:52632/api/ProductItems/1",
+			"time": "2019-10-27T11:57:05.115Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "DELETE",
+			"id": "147b16a3-9a05-4b0d-a1cf-61e1ab7f5a38",
+			"url": "http://localhost:52632/api/ProductItems/1",
+			"time": "2019-10-27T11:57:05.115Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "GET (Not existing Id)",
+			"id": "d9d0ff47-72f6-495e-8e75-de6c6cd774f4",
+			"url": "http://localhost:52632/api/ProductItems/999",
+			"time": "2019-10-27T11:57:05.115Z",
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found",
+				"detail": {
+					"name": "Not Found",
+					"detail": "The requested resource could not be found but may be available again in the future. Subsequent requests by the client are permissible."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 404": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "POST (Too long Name)",
+			"id": "1a233dbf-d70c-4257-8418-748f1419d7b1",
+			"url": "http://localhost:52632/api/ProductItems",
+			"time": "2019-10-27T11:57:05.115Z",
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request",
+				"detail": {
+					"name": "Bad Request",
+					"detail": "The request cannot be fulfilled due to bad syntax."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 400": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "PUT (Not existing Id)",
+			"id": "ccd0b66e-99d6-4558-8cc6-d5ce29f0ff8b",
+			"url": "http://localhost:52632/api/ProductItems/889",
+			"time": "2019-10-27T11:57:05.115Z",
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found",
+				"detail": {
+					"name": "Not Found",
+					"detail": "The requested resource could not be found but may be available again in the future. Subsequent requests by the client are permissible."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 404": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "DELETE (Not existing Id)",
+			"id": "10071dfa-5c12-4abf-a881-dec1af6c6a61",
+			"url": "http://localhost:52632/api/ProductItems/779",
+			"time": "2019-10-27T11:57:05.115Z",
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found",
+				"detail": {
+					"name": "Not Found",
+					"detail": "The requested resource could not be found but may be available again in the future. Subsequent requests by the client are permissible."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 404": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		}
+	],
+	"synced": false
+}

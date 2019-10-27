@@ -1,0 +1,401 @@
+{
+	"info": {
+		"_postman_id": "0ad3fee0-4649-48a9-bb55-e73118ca74d3",
+		"name": "ProductItemsTests",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "POST",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "78fa4c3d-fdf9-48dd-bc61-041b16ac3ce9",
+						"exec": [
+							"pm.test(\"Status code is 201\", function () { pm.response.to.have.status(201); });"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"Name\": \"First_product\",\n    \"Price\": 99.99\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:52632/api/ProductItems",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "52632",
+					"path": [
+						"api",
+						"ProductItems"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "32b5ebe6-6f8e-4b24-9dfc-fb3b406b3a02",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () { pm.response.to.have.status(200); });"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:52632/api/ProductItems",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "52632",
+					"path": [
+						"api",
+						"ProductItems"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "2ec0a62c-ee97-4e5e-bc9a-6b8d82d4f6d8",
+						"exec": [
+							"pm.test(\"Status code is 204\", function () { pm.response.to.have.status(204); });"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"Id\": 1,\n    \"Name\": \"Second_product\",\n    \"Price\": 79.99\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:52632/api/ProductItems/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "52632",
+					"path": [
+						"api",
+						"ProductItems",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET (Id)",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "662444e3-2363-4498-b72d-490f2898c84f",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () { pm.response.to.have.status(200); });"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:52632/api/ProductItems/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "52632",
+					"path": [
+						"api",
+						"ProductItems",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "4a364521-b32c-44b8-a1cf-7295c71b7355",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () { pm.response.to.have.status(200); });"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:52632/api/ProductItems/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "52632",
+					"path": [
+						"api",
+						"ProductItems",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET (Not existing Id)",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "c54df96d-1974-40ce-968d-21b8ad2f2612",
+						"exec": [
+							"pm.test(\"Status code is 404\", function () { pm.response.to.have.status(404); });"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:52632/api/ProductItems/999",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "52632",
+					"path": [
+						"api",
+						"ProductItems",
+						"999"
+					]
+				},
+				"description": "404"
+			},
+			"response": []
+		},
+		{
+			"name": "POST (Too long Name)",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "0e9e063c-fa44-4238-8e57-24950e90bcb9",
+						"exec": [
+							"pm.test(\"Status code is 400\", function () { pm.response.to.have.status(400); });"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"Name\": \"TooLongNameTooLongNameTooLongNameTooLongNameTooLongNameTooLongNameTooLongNameTooLongNameTooLongName11\",\n    \"Price\": 199.99\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:52632/api/ProductItems",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "52632",
+					"path": [
+						"api",
+						"ProductItems"
+					]
+				},
+				"description": "400"
+			},
+			"response": []
+		},
+		{
+			"name": "PUT (Not existing Id)",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "efab8cd8-5a31-427b-8fb7-cbe0ab486492",
+						"exec": [
+							"pm.test(\"Status code is 404\", function () { pm.response.to.have.status(404); });"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"Id\": 889,\n    \"Name\": \"Product\",\n    \"Price\": 77.77\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:52632/api/ProductItems/889",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "52632",
+					"path": [
+						"api",
+						"ProductItems",
+						"889"
+					]
+				},
+				"description": "404"
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE (Not existing Id)",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "dc0247d3-d338-4bcf-b049-24f26c5aa0b3",
+						"exec": [
+							"pm.test(\"Status code is 404\", function () { pm.response.to.have.status(404); });"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:52632/api/ProductItems/779",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "52632",
+					"path": [
+						"api",
+						"ProductItems",
+						"779"
+					]
+				},
+				"description": "404"
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "6e4ad88d-ffd9-491f-a571-070feeb0e9f8",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "84412942-a362-4666-b5a9-2d333c5f08b8",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
